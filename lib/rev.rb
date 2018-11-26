@@ -1,9 +1,9 @@
 # Definition for singly-linked list.
 class ListNode
-    attr_accessor :val, :next
+    attr_accessor :val, :nextN
     def initialize(val)
         @val = val
-        @next = nil
+        @nextN = nil
     end
 end
 
@@ -11,9 +11,9 @@ def display(head)
 
 		tmp_el = head
 
-		while !tmp_el.next.nil?
+		while !tmp_el.nextN.nil?
 			p tmp_el.val
-			tmp_el = tmp_el.next
+			tmp_el = tmp_el.nextN
 		end
 		p tmp_el.val
 
@@ -25,11 +25,11 @@ def insert(head, value)
 		else
 			tmp_el = head
 
-		while !tmp_el.next.nil?
-			tmp_el = tmp_el.next
+		while !tmp_el.nextN.nil?
+			tmp_el = tmp_el.nextN
 		end
 
-		tmp_el.next = node
+		tmp_el.nextN = node
 	end
 end
 
@@ -40,8 +40,8 @@ def reverse_list(head)
    next_node = nil
 
    while head
-   	  next_node = head.next
-   	  head.next = prev_node
+   	  next_node = head.nextN
+   	  head.nextN = prev_node
    	  prev_node = head
    	  head = next_node
 	end 
