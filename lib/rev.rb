@@ -54,8 +54,8 @@ insert(head,3)
 insert(head,4)
 insert(head,5)
 
-display(head)
+#display(head)
 
 head = reverse_list(head)
 
-display(head)
+#display(head)
