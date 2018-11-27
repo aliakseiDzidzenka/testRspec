@@ -11,6 +11,7 @@ class ListNode
 end
 
 def show(head)
+  # вернет строку, даже если не ListNode в параметре 
   if head.is_a?(ListNode) == false
     "Argument is not a ListNode"
   else
