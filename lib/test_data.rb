@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift(".")
-require 'rev'
+require 'rev_linked_list'
 
 value = 1
 
